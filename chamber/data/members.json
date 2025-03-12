@@ -4,7 +4,7 @@
     "address": "123 Silicon Valley, Tech City, CA 94043",
     "phone": "800-555-1234",
     "url": "http://techinnovators.com",
-    "imageUrl": "images/techinnovators.png",
+    "imageUrl": "images/company1.png",
     "membershipLevel": 3,
     "email": "contact@techinnovators.com"
   },
@@ -13,7 +13,7 @@
     "address": "456 Green St, Eco Town, TX 75001",
     "phone": "800-555-5678",
     "url": "http://greenearthsolutions.com",
-    "imageUrl": "images/greenearth.png",
+    "imageUrl": "images/company2.png",
     "membershipLevel": 2,
     "email": "info@greenearthsolutions.com"
   },
@@ -22,7 +22,7 @@
     "address": "789 Wellness Blvd, Health City, FL 33101",
     "phone": "800-555-9012",
     "url": "http://healthylivingco.com",
-    "imageUrl": "images/healthyliving.png",
+    "imageUrl": "images/company3.png",
     "membershipLevel": 1,
     "email": "support@healthylivingco.com"
   },
@@ -31,7 +31,7 @@
     "address": "101 Fashion Ave, Style City, NY 10001",
     "phone": "800-555-3456",
     "url": "http://urbanfashionhub.com",
-    "imageUrl": "images/urbanfashion.png",
+    "imageUrl": "images/company1.png",
     "membershipLevel": 3,
     "email": "sales@urbanfashionhub.com"
   },
@@ -40,7 +40,7 @@
     "address": "202 Culinary Rd, Food Town, IL 60601",
     "phone": "800-555-7890",
     "url": "http://gourmetdelights.com",
-    "imageUrl": "images/gourmetdelights.png",
+    "imageUrl": "images/company2.png",
     "membershipLevel": 2,
     "email": "info@gourmetdelights.com"
   },
@@ -49,7 +49,7 @@
     "address": "303 Adventure Ln, Nature City, CO 80201",
     "phone": "800-555-2345",
     "url": "http://adventureoutdoors.com",
-    "imageUrl": "images/adventureoutdoors.png",
+    "imageUrl": "images/company3.png",
     "membershipLevel": 1,
     "email": "contact@adventureoutdoors.com"
   },
@@ -58,7 +58,7 @@
     "address": "404 Tech Blvd, Innovation City, WA 98001",
     "phone": "800-555-6789",
     "url": "http://smarthomesolutions.com",
-    "imageUrl": "images/smarthome.png",
+    "imageUrl": "images/company1.png",
     "membershipLevel": 3,
     "email": "support@smarthomesolutions.com"
   }
