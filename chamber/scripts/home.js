@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const response = await fetch('data/members.json');
+  const response = await fetch('https://amonapolonio.github.io/wdd231/chamber/data/members.json');
   const businessData = await response.json();
 
   const businessListings = document.querySelector('.business-listings');
