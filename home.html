@@ -3,85 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/global-style.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/home.js" defer></script>
-    <script src="scripts/mobile-menu.js" defer></script>
+    <meta name="description" content="Personal portfolio and course progress website">
+    <meta name="author" content="Amon Apolonio">
+    <title>Amon Apolonio - Web Developer</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/hamburgerMenu.js" defer></script>
+    <script src="scripts/dateUtils.js" defer></script>
+    <script src="scripts/courseData.js" defer></script>
+    <script src="scripts/wayfinding.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/lotus.svg" alt="Logo" class="logo-img">
-            Timbuktu Chamber of Commerce
+        <img src="images/profile-photo.jpeg" alt="Profile Photo" class="profile-photo">
+        <span class="name">Amon Apolonio</span>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-            <img src="images/menu-icon.svg" alt="Menu" class="menu-icon">
-        </nav>
     </header>
-    <div class="mobile-menu">
-        <button class="close-button">&times;</button>
-        <div class="mobile-menu-header">
-            <img src="images/lotus.svg" alt="Logo" class="logo-img">
-            Timbuktu Chamber of Commerce
-        </div>
-        <ul class="mobile-nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Discover</a></li>
+
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://github.com/AmonApolonio" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/amon-apolonio-vieira-a2a61527a/" target="_blank">LinkedIn</a></li>
         </ul>
-    </div>
-    <div class="hero">
-        <div class="hero-image">
-            <img src="images/hero-low-res.jpg" alt="Hero Image">
-        </div>
-        <button class="btn">Keynote Tickets</button>
-    </div>
+    </nav>
+
     <main>
         <h1>Home</h1>
-        <section class="info-sections">
-            <div class="events">
-                <h2>Events</h2>
+        
+        <div class="two-columns">
+            <section class="course-work">
+                <h2>Course Work</h2>
+                <ul></ul>
+            </section>
+
+            <section class="location">
+                <h2>São Paulo, Brazil</h2>
+                <figure>
+                    <img src="images/sao-paulo.jpg" alt="São Paulo">
+                    <figcaption>São Paulo</figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
             </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <div id="current-weather"></div>
+            <div class="course-container" id="course-container">
+                <!-- Courses will be populated by JavaScript -->
             </div>
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <div id="weather-forecast"></div>
-            </div>
+            <p class="total-credits">Total Credits: <span id="total-credits">0</span></p>
         </section>
-        <div class="business-listings"></div>
     </main>
+
     <footer>
-        <div class="contact-info">
-            Timbuktu Chamber of Commerce<br>
-            R. James Esdras Faust 400, Campinas - SP, 13092-820<br>
-            info@timbuktuofcommerce.org<br>
-            (331) 444-3400
-        </div>
-        <div class="social-icons">
-            <a href="#"><img src="images/youtube-icon.svg" alt="YouTube"></a>
-            <a href="#"><img src="images/x-icon.svg" alt="x"></a>
-            <a href="#"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
-        </div>
-        <div class="credits">
-            WDD231 Class Project<br>
-            Amoon Apolonio<br>
-            &copy; Timbuktu Chamber of Commerce<br>
-            Last Modification: <span id="lastModified"></span>
-        </div>
+        <p>&copy; <span id="year"></span> ☀️ Amon Apolonio ☀️ São Paulo - Brazil</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
