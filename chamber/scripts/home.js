@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const businessData = await response.json();
 
   const businessListings = document.querySelector('.business-listings');
+  businessListings.classList.add('grid-container');
 
   businessData.forEach(business => {
     const businessCard = document.createElement('div');
