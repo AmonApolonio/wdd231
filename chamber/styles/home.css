@@ -41,6 +41,22 @@
   background: var(--primary-color-highlight);
 }
 
+.toggle-btn {
+  display: inline-block;
+  margin: 1rem 0;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.toggle-btn:hover {
+  background: var(--primary-color-highlight);
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -118,6 +134,45 @@ main h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
   padding: 16px;
+}
+
+.list-container {
+  display: block;
+}
+
+.list-container .business-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-container .business-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.list-container .business-card div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container .business-card div > p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+.list-container .business-card div > p strong {
+  margin: 0;
 }
 
 .business-card {

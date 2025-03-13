@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   const businessListings = document.querySelector('.business-listings');
   businessListings.classList.add('grid-container');
 
+  const toggleButton = document.createElement('button');
+  toggleButton.textContent = 'List View';
+  toggleButton.classList.add('toggle-btn');
+  document.querySelector('main').insertBefore(toggleButton, businessListings);
+
+  toggleButton.addEventListener('click', () => {
+    businessListings.classList.toggle('grid-container');
+    businessListings.classList.toggle('list-container');
+    toggleButton.textContent = businessListings.classList.contains('list-container') ? 'Grid View' : 'List View';
+  });
+
   businessData.forEach(business => {
     const businessCard = document.createElement('div');
     businessCard.classList.add('business-card');
