@@ -1,95 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-.lora-regular {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lora-bold {
-  font-family: "Lora", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.lora-italic {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.lora-bold-italic {
-  font-family: "Lora", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.lato-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.lato-thin-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.lato-light-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.lato-regular-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.lato-bold-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.lato-black-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
 :root {
   --primary-color: #b02705;
   --secondary-color: #333;
   --background-color: #f4f4f4;
   --text-color: #000;
-  --font-family: Arial, sans-serif;
+  --font-family: 'Lato', sans-serif;
+  --sub-font-family: 'Lora', serif;
   --primary-color-highlight: #db2f04;
 }
 
@@ -115,7 +32,7 @@ header {
 }
 
 header .logo {
-  font-family: "Lora", serif;
+  font-family: var(--sub-font-family);
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -128,31 +45,11 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin: 0;
-  padding: 0;
-}
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-family: "Lato", sans-serif;
-}
-
-.hero-image {
-  background-size: cover;
-  background-position: center;
-  width: 90%;
-  max-width: 1200px;
-  height: 300px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-family: var(--font-family);
 }
 
 footer {
@@ -182,10 +79,6 @@ footer .social-icons img {
 footer .contact-info,
 footer .credits {
   text-align: start;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
 }
 
 .logo {
