@@ -52,6 +52,10 @@ nav ul li a {
   font-family: var(--font-family);
 }
 
+.nav-list a:hover, .mobile-nav-list a:hover, nav ul li.active a  {
+  text-decoration: underline;
+}
+
 footer {
   background: var(--secondary-color);
   color: white;

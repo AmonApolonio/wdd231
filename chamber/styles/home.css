@@ -108,10 +108,6 @@ main h1 {
   margin-bottom: 0.25rem;
 }
 
-.nav-list a:hover, .mobile-nav-list a:hover {
-  text-decoration: underline;
-}
-
 .social-icons img {
   width: 40px;
   height: 40px;
