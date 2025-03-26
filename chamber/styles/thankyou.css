@@ -1,0 +1,32 @@
+.form-data {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.form-data p {
+    margin: 10px 0;
+}
+
+.return-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.return-link:hover {
+    background-color: #0056b3;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+  }
