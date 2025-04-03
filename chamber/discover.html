@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce. Discover local businesses and events.">
+    <meta name="author" content="Amon Apolonio">
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/global-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/lotus.svg" type="image/svg+xml">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/mobile-menu.js" defer></script>
+    <script src="scripts/way-finding.js" defer></script>
+    <script src="scripts/visitor-info.js" defer></script>
+    <script src="scripts/generate-cards.js" defer></script>
+    <link rel="stylesheet" href="styles/discover.css">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://amonapolonio.github.io/wdd231/chamber/images/hero.png">
+    <meta property="og:url" content="https://amonapolonio.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Welcome to the Timbuktu Chamber of Commerce. Discover local businesses and events.">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/lotus.svg" alt="Logo" class="logo-img">
+            Timbuktu Chamber of Commerce
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+            <img src="images/menu-icon.svg" alt="Menu" class="menu-icon">
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <button class="close-button">&times;</button>
+        <div class="mobile-menu-header">
+            <img src="images/lotus.svg" alt="Logo" class="logo-img">
+            Timbuktu Chamber of Commerce
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </div>
+    <main>
+      <aside class="visitor-info">
+          <p id="visitor-message"></p>
+      </aside>
+      <div class="discover-grid">
+          <section class="cards">
+          </section>
+      </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            Timbuktu Chamber of Commerce<br>
+            R. James Esdras Faust 400, Campinas - SP, 13092-820<br>
+            info@timbuktuofcommerce.org<br>
+            (331) 444-3400
+        </div>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@amonapoloniovieira3032"><img src="images/youtube-icon.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/x-icon.svg" alt="x"></a>
+            <a href="https://www.linkedin.com/in/amon-apolonio-vieira-a2a61527a/"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+        </div>
+        <div class="credits">
+            WDD231 Class Project<br>
+            Amon Apolonio<br>
+            &copy; Timbuktu Chamber of Commerce<br>
+            Last Modification: <span id="lastModified"></span>
+        </div>
+    </footer>
+</body>
+</html>

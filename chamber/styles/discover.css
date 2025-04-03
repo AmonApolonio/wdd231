@@ -1,0 +1,74 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-areas: 
+        "cards";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+figure {
+    margin: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-area: cards;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.visitor-info {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-areas: 
+            "cards";
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-areas: 
+            "cards";
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
