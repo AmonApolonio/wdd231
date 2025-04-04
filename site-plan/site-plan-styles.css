@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #c7712b;
+  --secondary-color: #171717;
+  --body-color: #333333;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--body-color);
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
+
+section#wireframe img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 15px;
+}
