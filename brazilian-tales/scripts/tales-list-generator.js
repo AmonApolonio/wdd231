@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 ];
 
     const talesListContainer = document.getElementById("tales-list-container");
+    const modal = document.getElementById("tale-modal");
+    const modalContent = document.getElementById("modal-content");
 
     tales.forEach(tale => {
         const taleItem = document.createElement("div");
@@ -34,6 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
+        taleItem.addEventListener("click", () => {
+            modalContent.innerHTML = `
+                <img src="${tale.image}" alt="${tale.name}" class="modal-image">
+                <h2 class="modal-title">${tale.name}</h2>
+                <p class="modal-description">${tale.completeDescription}</p>
+            `;
+            modal.style.display = "block";
+        });
+
         talesListContainer.appendChild(taleItem);
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
     });
 });

@@ -38,7 +38,6 @@ img {
   padding: 0 20px;
 }
 
-/* Header Styles */
 header {
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -92,7 +91,6 @@ nav ul li a.active {
   color: #c7712b;
 }
 
-/* Hero Section */
 .hero {
   background: linear-gradient(to bottom, #171717, #333333);
   color: #fff;
@@ -106,14 +104,12 @@ nav ul li a.active {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  /* Change to align items at the bottom */
   gap: 40px;
 }
 
 .hero-text {
   flex: 1;
   padding-bottom: 20px;
-  /* Add padding to align with image bottom */
 }
 
 .hero-text h1 {
@@ -163,7 +159,6 @@ nav ul li a.active {
   background-color: #a55e22;
 }
 
-/* Popular Tales Section */
 .popular-tales {
   padding: 80px 0;
 }
@@ -233,7 +228,6 @@ nav ul li a.active {
   color: #fff;
 }
 
-/* Tales List Layout */
 .tales-list-container {
   display: flex;
   flex-direction: column;
@@ -249,6 +243,11 @@ nav ul li a.active {
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.tale-item:hover {
+  background-color: #f9f9f9; /* Optional hover effect */
 }
 
 .tale-item img {
@@ -274,7 +273,6 @@ nav ul li a.active {
   color: #333;
 }
 
-/* Learn Through Play Section */
 .learn-section {
   background-color: #E5E7EB;
   padding: 80px 0;
@@ -341,7 +339,6 @@ nav ul li a.active {
   border-radius: 8px;
 }
 
-/* Footer Styles */
 footer {
   background-color: #171717;
   color: #fff;
@@ -352,9 +349,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px; /* Increased gap space */
+  gap: 100px;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* Allow wrapping when there's no space */
+  flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -421,7 +418,6 @@ footer {
   opacity: 0.7;
 }
 
-/* Media Queries */
 @media (max-width: 992px) {
 
   .hero-content,
@@ -443,7 +439,6 @@ footer {
 
   .hero-content {
     align-items: center;
-    /* Reset alignment for mobile */
   }
 
   .activity-item {
@@ -457,7 +452,7 @@ footer {
 
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column; /* Change to column layout for mobile */
+    flex-direction: column;
     gap: 40px;
   }
 
@@ -499,4 +494,57 @@ footer {
 .about-image {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.inspiration-quote {
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tale-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #c7712b;
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }

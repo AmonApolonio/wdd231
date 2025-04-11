@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/brazilian-tales.css">
     <link rel="icon" href="images/logo-icon.png" type="image/png">
     <script src="scripts/tales-list-generator.js"></script>
+    <script src="scripts/inspiration-quote.js"></script>
+    <script src="scripts/fetch-quote.js"></script>
 </head>
 <body>
     <header>
@@ -28,6 +30,14 @@
       </div>
   </header>
 
+    <section id="inspiration-quote" class="inspiration-quote">
+        <div class="container">
+            <h2>Inspiration Quote from API</h2>
+            <blockquote id="quote-text">Loading...</blockquote>
+            <div id="quote-author"></div>
+        </div>
+    </section>
+
     <section class="tales-list">
         <div class="container">
             <h2 class="tales-title">All Tales</h2>
@@ -35,6 +45,10 @@
             </div>
         </div>
     </section>
+
+    <div id="tale-modal">
+        <div id="modal-content"></div>
+    </div>
 
     <footer>
       <div class="container">
