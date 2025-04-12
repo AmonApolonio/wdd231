@@ -548,3 +548,79 @@ footer {
   line-height: 1.6;
   color: #333;
 }
+
+.contact-container {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #c7712b;
+  margin-bottom: 30px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-container button {
+  padding: 12px 20px;
+  background-color: #c7712b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #a55e22;
+}
+
+.feedback-success-container {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.feedback-success-container h1 {
+  color: #c7712b;
+  margin-bottom: 20px;
+}
+
+.feedback-success-container p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}

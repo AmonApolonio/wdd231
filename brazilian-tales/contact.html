@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brazilian Folklore Tales</title>
+    <link rel="stylesheet" href="styles/brazilian-tales.css">
+    <script type="module" src="scripts/contact-handler.js" defer></script>
+    <script src="scripts/nav-pathfinder.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo-icon.png" alt="Logo Icon" class="logo-icon" loading="lazy">
+                <span class="logo-text">Brazilian Folklore Tales</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="brazilian-tales.html">Home</a></li>
+                    <li><a href="tales.html">Tales</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container contact-container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="feedback">Feedback or Suggestion:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo-icon.png" alt="Logo Icon" class="logo-icon">
+                        <span class="logo-text">Brazilian Folklore Tales</span>
+                    </div>
+                    <p>Bringing Brazilian folklore to life for new generations.</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <img src="images/facebook-icon.png" alt="Facebook Icon">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="images/instagram-icon.png" alt="Instagram Icon">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="images/youtube-icon.png" alt="YouTube Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Brazilian Folklore Tales. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
